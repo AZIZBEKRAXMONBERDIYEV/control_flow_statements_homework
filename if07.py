@@ -12,4 +12,7 @@ def main(a):
     Returns:
         string: the message to print
     """
-    return
+    if a>0:
+        
+     return a
+print(main(8))
