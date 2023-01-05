@@ -13,4 +13,4 @@ def main(a):
 
 
     return a
-print(main(-3))
+print(main(3))
