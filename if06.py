@@ -29,5 +29,5 @@ def main(a,b,c):
         i = 2
     if a < 0 and b < 0 and c < 0 :
         i = 3
-    return i,n
-print(main(1,2,-3))
+    return n,i
+print(main(1,-2,-3))
