@@ -8,12 +8,14 @@ def main(a,b,c):
     returns:
         integer: the number of positive numbers in the given numbers
     """
-    if a>0:
-       a+=1
-    if b>0:
-       b+=1
-    if c>0:
-       c+=1 
-    
-    return a,b,c
-print(main(1,4,-3))
+    if a > 0 and b > 0 and c > 0 :
+        n = 3
+    if (a > 0 and b > 0 and c < 0) or (a < 0 and b > 0 and c > 0) or (a > 0 and b < 0 and c > 0) :
+        n = 2
+    if (a > 0 and b < 0 and c < 0) or (a < 0 and b > 0 and c < 0) or (a < 0 and b < 0 and c > 0) :
+        n = 1
+    if a < 0 and b < 0 and c < 0 :
+        n = 0
+        
+    return n 
+print(main(2,5,-8))
